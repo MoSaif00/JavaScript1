@@ -7,7 +7,7 @@ console.log(firstArray.length);
 console.log("Second array length is : ");
 console.log(secondArray.length);
 
-if(firstArray.length == secondArray.length) {
+if(firstArray.length === secondArray.length) {
     console.log("they are the same length ");
 }
 else{
