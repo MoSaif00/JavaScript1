@@ -1,4 +1,19 @@
 "use strict"
+
+/* 
+function takes two values and check whether
+its type is same or not 
+*/
+function typeCheck(value1 , value2){
+    if(typeof value1 === typeof value2){
+        return "SAME TYPE";
+    }
+    else{
+        return "NOT THE SAME TYPE ";  
+    }
+}
+
+// declare the values of four variables 
 let myName = "Mohammed Saif"; 
 let myProfession = "Developer";
 let myParents = {
@@ -11,53 +26,21 @@ let myPets = {
     turtle : "Alexa",
 }
 
-if(typeof myName === typeof myProfession){
-    console.log("Same Type");
-} 
-else{
-    console.log("Not the same Type");
-}
+// Use the function to check 6 conditional Statements 
+console.log(typeCheck(myName,myProfession));
+console.log(typeCheck(myName,myParents));
+console.log(typeCheck(myProfession,myParents));
+console.log(typeCheck(myParents,myPets));
+console.log(typeCheck(myPets,myName));
+console.log(typeCheck(myPets,myParents));
 
-if (typeof myParents === typeof myPets) {
-    console.log("Same Type");
-}
-else {
-    console.log("Not the same type");
-}
 
-if (typeof myName === typeof myParents) {
-    console.log("Same type");
-}
-else {
-    console.log("Not the same type");
-}
-
-if (typeof myName === typeof myPets){
-    console.log("Same type");
-}
-else{
-    console.log("Not the same type");
-}
-
-if (typeof myProfession === typeof myParents) {
-    console.log("Same type");
-}
-else{
-    console.log("Not the same type");
-}
-
-if (typeof myProfession === typeof myPets) {
-    console.log("Same type");
-}
-else{
-    console.log("Not the same type");
-}
-
+/*
+Write 2 statements to log the type of 
+2 variables, each with a different data type
+*/
+console.log("type of myName variable is ");
 console.log(typeof myName);
-console.log(typeof myParents);
-
-if (typeof myName === typeof myParents) {
-    console.log("same type");
-} else {
-    console.log("Not the same type");
+console.log("type of myPets variable is ");
+console.log(typeof myPets);
 }
