@@ -9,3 +9,14 @@
 - If it's even, log to the console The number [PUT_NUMBER_HERE] is even!.
 */
 
+let i;
+
+for ( i = 0; i <= 20; i++)
+{
+    if( i % 2 == 0){
+        console.log("The Number ", i , " is even ");
+    }
+    else{
+        console.log("The Number ", i , " is odd");
+    }
+}

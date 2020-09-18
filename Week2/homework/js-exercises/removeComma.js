@@ -17,3 +17,4 @@ console.log(myString.length);
 
 // logging mystring with replacing comma by space
 console.log(myString.replace(/,/g," "));
+
