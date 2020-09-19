@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // JavaScript to Report whether or not a number is odd/even! 
 

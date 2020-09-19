@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Remove a commas from a  string 
 
