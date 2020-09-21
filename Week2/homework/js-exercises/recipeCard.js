@@ -20,15 +20,12 @@ myMealRecipe.ingredients = [
     "700g of chopped chicken",
     "800g of rice",
     "2 tsp sambal",
-    "2 tsp salt/peper/curry",
+    "2 tsp salt/peper/curry"
 ];
 
 // log each property out sparteley and using for loop
-console.log("Meal Name : " + myMealRecipe.title);
-console.log("Serves : " + myMealRecipe.servings );
-console.log("Ingredients : ");
-for (let i = 0; i < myMealRecipe.ingredients.length; i++){
-    console.log( myMealRecipe.ingredients[i]);
+for ( let property in myMealRecipe ){
+    console.log( property + " : " + myMealRecipe[property]);
 }
 
 // create new lines
