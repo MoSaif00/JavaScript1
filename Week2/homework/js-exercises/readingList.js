@@ -12,4 +12,46 @@
 - If you haven't read it log a string like You still need to read "The Lord of the Rings"
 */
 
-const 
+
+// Decalring array of 3 objects contains my books 
+const myBooks = [
+    {
+        title: "The monk who sold his ferari",
+        author: "Robin Sharma",
+        alreadyRead: true,
+    },
+
+    {
+        title: "The 5Am Club",
+        author: "Robin Sharma",
+        alreadyRead: false,
+    },
+
+    {
+        title: "Crushing it",
+        author: " Gary Vee",
+        alreadyRead: true,
+    }
+];
+
+// looping through the array of books 
+for ( let i = 0 ; i < myBooks.length ; i++ ){
+    console.log(myBooks[i]);
+}
+
+
+// loging the book title and author 
+for ( const book of myBooks ){
+    console.log(book["title"] + " By " + book["author"]);
+}
+
+// loging the books according to the books i alread read or not 
+for ( const book of myBooks){
+    if(book.alreadyRead === true ){
+        console.log("You have already read " , book["title"]);
+    }
+    else
+    {
+        console.log("You still need to read ", book.title);
+    }
+}

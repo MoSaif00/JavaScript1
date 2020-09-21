@@ -23,19 +23,10 @@ myMealRecipe.ingredients = [
     "2 tsp salt/peper/curry"
 ];
 
-// log each property out sparteley and using for loop
+// log each property out sparteley and using loops 
 for ( let property in myMealRecipe ){
     console.log( property + " : " + myMealRecipe[property]);
 }
 
-// create new lines
-console.log('\n\n');
 
-// use while loop to log my recipe 
-console.log("Meal Name : " + myMealRecipe.title);
-console.log("Serves : " + myMealRecipe.servings );
-console.log("Ingredients : ");
-let i=0;
-while(i < myMealRecipe.ingredients.length){
-    console.log( myMealRecipe.ingredients[i]); i++;
-}
+
