@@ -13,10 +13,10 @@
  const numChildren = [ 1, 2, 3, 4, 5];
  const partnerNames = [
      'Salwa',
-     'Sam',
+     'Somya',
      'Alixa',
      'Tong',
-     'Roshan'
+     'Rozan'
  ];
  const locations =[
      'Amsterdam',
@@ -44,4 +44,6 @@
      console.log(`You will be a ${randomJobs} in ${randomLocation}, married to ${randomPartnerName} with ${randomNumChildren} Kid${plural}.`);
  }
 
+ tellFortune(numChildren, partnerNames, locations, jobs);
+ tellFortune(numChildren, partnerNames, locations, jobs);
  tellFortune(numChildren, partnerNames, locations, jobs);
