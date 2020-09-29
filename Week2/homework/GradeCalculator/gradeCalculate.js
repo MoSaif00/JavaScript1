@@ -38,10 +38,10 @@ function gradeCalculate(scores){
         grade = "F";
     }else
     {
-        return " invalid input "; //return value of the function if it is invalid  scores
+        return ` invalid input`; //return value of the function if it is invalid  scores
     }
 
-    return " You got a " + grade + "  ( " + percentage + "% )" ; // return value of the function
+    return ` You got a ${grade}  ( ${percentage}% )` ; // return value of the function
 }
 
 
