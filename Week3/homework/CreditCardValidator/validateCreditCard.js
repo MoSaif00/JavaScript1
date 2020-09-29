@@ -34,9 +34,8 @@ function validateCreditNumber(cardNumber){
 
     const lessThanSixteen = ()=> {
         let sum = 0;
-        while (cardNumber) {
-          sum += cardNumber % 10;
-          cardNumber = Math.floor(cardNumber / 10);
+        for(const number of cardNumber){
+            sum+=parseInt(number);
         }
         if (sum <= 16) {
           return true;
