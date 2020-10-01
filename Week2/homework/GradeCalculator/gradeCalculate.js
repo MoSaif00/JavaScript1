@@ -16,7 +16,9 @@ Grade F (0% - 49%)
 // writing function that contains the scores and convert to percentage  which check  the percentage using if-statement then result the grade according to the precentage
 function gradeCalculate(scores){
     let grade; // declare undefined grade variable 
-    const percentage = Math.floor((scores/100)*100);  // declare percentage variable which use math method to convert the scores into percentage
+    const maximumScore = 100; // define the maximum score .
+    
+    const percentage = Math.floor((scores/higherScore)*100);  // declare percentage variable which use math method to convert the scores into percentage
 
     // if statement to check what grade corresponds with that percentage
     if( percentage >= 90 && percentage <= 100 ){
