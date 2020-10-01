@@ -34,10 +34,6 @@ const myBooks = [
     }
 ];
 
-// looping through the array of books 
-for ( let i = 0 ; i < myBooks.length ; i++ ){
-    console.log(myBooks[i]);
-}
 
 
 // loging the book title and author 
