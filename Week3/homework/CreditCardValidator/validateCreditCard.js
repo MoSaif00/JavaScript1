@@ -12,25 +12,21 @@
 
 function validateCreditNumber(cardNumber){
     
-    const numberLength = () =>  cardNumber.toString().length; // function to convert numbers to string so we can check the length 
-
-    const notNumber = isNaN() ; // preWritten function to check type of input if it is numbers 
+    const numberLength = (cardNumber) =>  cardNumber.toString().length; // function to convert numbers to string so we can check the length 
 
     const sameNumbers=  ()=>{
         let counter = 0;
         let numberString = cardNumber.toString();
         for (let index in numberString) {
-            if (numberString[index] == numberString[0]) {
-            counter++;
+            if (numberString[index] !== numberString[0]) {
+            return false;
             }
         }
-        if (counter == 16) {
-            return true;
-        }
-        return false;
+    
+        return true;
     } // function to check if the contents is same 
     
-    const oddNumber = ()=> (cardNumber % 2 == 1) ? true : false ; // function to check if the final number is odd if yes return true 
+    const oddNumber = ()=> (cardNumber % 2 == 1) ;// function to check if the final number is odd if yes return true 
 
     const lessThanSixteen = ()=> {
         let sum = 0;
