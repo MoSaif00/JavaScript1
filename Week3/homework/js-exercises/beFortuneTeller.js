@@ -33,16 +33,21 @@
      'Pilot'
  ]
 
- function tellFortune(){
-     const randomNumChildren = numChildren[Math.floor(Math.random() * numChildren.length)];
-     const randomPartnerName = partnerNames[Math.floor(Math.random() * partnerNames.length)];
-     const randomLocation = locations[Math.floor(Math.random() * locations.length)];
-     const randomJobs = jobs[Math.floor(Math.random() * jobs.length)];
+  function getElementByArray(array){ // function to apply math random to all arrays 
+    const randomIndex = Math.floor(Math.random() * array.length);
+    return array[randomIndex]; 
+ }
+ function tellFortune(numChildren, partnerNames, locations, jobs){
+     const randomNumChildren = getElementByArray(numChildren);
+     const randomPartnerName = getElementByArray(partnerNames);
+     const randomLocation = getElementByArray(locations);
+     const randomJobs = getElementByArray(jobs);
 
      const plural = randomNumChildren >= 2 ? "s" : " " ; // to pluralize when the number of kids are more than one 
 
      console.log(`You will be a ${randomJobs} in ${randomLocation}, married to ${randomPartnerName} with ${randomNumChildren} Kid${plural}.`);
  }
+
 
  tellFortune(numChildren, partnerNames, locations, jobs);
  tellFortune(numChildren, partnerNames, locations, jobs);
