@@ -23,12 +23,6 @@ function addToShoppingCart(item){
         shoppingCart.shift();
     } // check if the the list more than 3 items  remove one from the beggining 
 
-   /* 
-    for (let i = 0; i < shoppingCart.length; i++) {
-        console.log(shoppingCart[i]);
-      } // for-loop to go through the array to list the items 
-    
-    */
     console.log(` You bought ${shoppingCart.join(', ')}.`);
     
 }
@@ -37,9 +31,3 @@ addToShoppingCart('chocolate'); // returns bananas , milk, chocolate
 addToShoppingCart('Waffles'); //returns milk, chocolate , Waffles
 addToShoppingCart('tea'); // returns chocolate, Waffles, tea
 
-
-// // This is another way to loop three times with adding new items from an array 
-// const theNewItems = ['chocolate', 'Waffles', 'Tea'];
-// for (let i = 0; i < 3; i++) {
-//   addToShoppingCart(theNewItems[i]);
-// }
